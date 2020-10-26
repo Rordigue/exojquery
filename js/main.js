@@ -124,5 +124,55 @@ $("div").text("Hello World");
 $("input").val("John Doe");
 
 // Ex 34 change the value of an img src
-
 $("img").attr("src", "myimage.jpg")
+
+// Ex 35 change the text of a link and change the value of href
+$("#myLink").text("Demo");
+$("#myLink").attr("href", "https://www.demo.com");
+
+// Ex 36 insert "yes" at the end of a p element
+$("p").append("YES!");
+
+// Ex 37 insert "yes" at the beginning of a p element
+$("p").prepend("YES!");
+
+// Ex 38 remove a div
+$("div").remove();
+
+// Ex 39 remove childs of a div
+$("div").empty();
+
+// Ex 40 remove all div with class test and demo
+$("div").remove(".test, .demo");
+
+// Ex 41 add "important" class to p element
+$("p").addClass("important");
+
+// Ex 42 add "important" and "test" class to p element
+$("p").addClass("important test");
+
+// Ex 43 remove "important" class from p element
+$("p").removeClass("important");
+
+// Ex 44 toggle between adding and removing class on click
+$("p").click(function(){
+  $(this).toggleClass("important")
+});
+
+// Ex 45 get the direct parent of a span element
+$("span").parent();
+
+// Ex 46 get all ancestor of a span element
+$("span").parents();
+
+// Ex 47 get all children of a div
+$("div").children();
+
+// Ex 48 get all span element that are descendants of div
+$("div").find("span");
+
+// Ex 49 get all sibling element of an h2
+$("h2").siblings();
+
+// Ex 50 get the first div in the doc
+$("div").first();
